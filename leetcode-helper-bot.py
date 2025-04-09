@@ -306,7 +306,7 @@ def main() -> None:
 
     # Download button (persistent and independent of previous button click)
     if "final_code" in st.session_state and "code_explanation" in st.session_state:
-        download_content = f"""# 📄 Refactored Solution\n\n{st.session_state.final_code}\n\n# 🧠 Code Explanation\n\n{st.session_state.code_explanation}"""
+        download_content = f"""#🧠 Code Explanation\n\n{st.session_state.code_explanation}\n\n# 📄 Refactored Solution\n\n{st.session_state.final_code}"""
 
         st.download_button(
             label="📥 Download Final Solution & Explanation",
