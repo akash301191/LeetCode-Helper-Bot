@@ -84,7 +84,7 @@ leetcode-helper-bot/
 - **`customization_sidebar`**: Provides user controls for customizing refactoring level, commenting style, and explanation depth.
 - **`leetcode_input_section`**: Allows users to input the LeetCode problem and solution in a dual-column layout.
 - **`initialize_openai_model`**: Initializes the GPT-4o model using the user-provided OpenAI API key.
-- **`refactor_and_comment_code`**: Invokes an agent to refactor the original code and then adds comments according to the selected style.
+- **`refactor_and_comment_code`**: Invokes an agent to refactor the original code, which is fed to another agent to add comments according to the selected style.
 - **`generate_code_explanation`**: Uses a dedicated agent to generate a step-by-step explanation of the code with optional complexity analysis.
 - **`sanitize_text`**: Cleans and formats problem and solution inputs to ensure model-safe prompts.
 
